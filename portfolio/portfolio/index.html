@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #f099c4;
+  padding: 5px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+}
+.button {
+  background-color: #e0a2f8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header"><h2>Emerald Luxner</h2></div>
+  <div class="menu"><a href="programming.html" class="button">progamming</a><a href="graphicdesign.html" class="button">graphic design</a><a href="Resume.pdf" class="button">resume</a><a href="bread.jpg" class="button">bread</a><img src="emerald.png" alt="emerald"></div>
+  <div class="content"><h3>About Emerald</h3><p>Emerald is an inspiring game development student from upstate New York. They have always loved video games and always wanted to learn more about how they were made. In 5th grade, they learned about code.org and got obsessed with learning more about code. They are known for making games like ChatBot and Lovin Hell. They are also known for their social media accounts where they read on stream and make bookmarks.
+  </p></div>
+  <div class="footer"><h4>contact info</h4> <p>phone: 123-456-7890</p><p>email: emeraldsworld@emerald.com</p><p>address: 666 emerald st, emeraldsworld, ny, USA</p></div>
+</div>
+
+</body>
+</html>
+
+
+
