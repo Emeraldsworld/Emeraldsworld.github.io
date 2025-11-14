@@ -2,11 +2,11 @@
 <html>
 <head>
 <style>
+
   img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
-
 .container {
   display: grid;
   grid-template-areas:
@@ -28,15 +28,22 @@
 }
 .container > div.menu {
   grid-area: menu;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  
 }
 .container > div.content {
   grid-area: content;
+  width: 100%;
 }
-.container > div.footer {
-  grid-area: footer;
-}
+
 .button {
-  background-color: #56366d;
+  background-color: #5d366d;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -45,7 +52,12 @@
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 50%
+  }
+  body {
+    margin: 0%;
+  }
 </style>
 </head>
 <body>
@@ -63,6 +75,8 @@
   <h3>stuff for fun</h3>
   <p>I made this during may for star wars day using Canva</p>
   <img src="Rebellions are built on hope..png" alt="a star wars quote" width="300" height="300">
+  <p>I made this as a tribute to a minecraft youtuber -technoblade- using krita</p>
+  <img src="technoblade artwork.png" alt="a painting of sword, cape and swords surrounded by quotes" width="300" height="300">
 
 </div>
   
