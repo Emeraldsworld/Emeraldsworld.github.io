@@ -27,6 +27,14 @@
 }
 .container > div.menu {
   grid-area: menu;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  
 }
 .container > div.content {
   grid-area: content;
@@ -45,14 +53,21 @@
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-}
+  width: 50%
+  }
 </style>
 </head>
 <body>
 
 <div class="container">
   <div class="header"><h2>Emerald Luxner</h2></div>
-  <div class="menu"><a href="index.html" class="button">back</a><a href="graphicdesign.html" class="button">graphic design</a><a href="resume for portfolio.pdf" class="button">resume</a><img src="emerald.png" alt=emerald><a href="audio.html" class=button>audio</a></div>
+  <div class="menu">
+    <a href="index.html" class="button">back</a>
+    <a href="graphicdesign.html" class="button">graphic design</a>
+    <a href="resume for portfolio.pdf" class="button">resume</a><img src="emerald.png" alt=emerald>
+    <a href="audio.html" class=button>audio</a>
+    <a href="https://forms.gle/AmrkXAsctyWZe1oS8" class="button">Contact Form</a>
+  </div>
   <div class="content">
   <h3>About ChatBot</h3>
   <img src="chatbot screenshot 1.jpeg" alt="a photo of a character on a platform" height="200" width="200">
@@ -72,6 +87,7 @@
   <img src="nvm screenshot 1.png" alt="a visual novel of 2 girls and the 2 options you need to decide between" height="200" width="200">
   <img src="nvm screenshot 2.png" alt="a visual novel of 2 girls arguing" height="200" width="200">
   <p>Natalie Vs. The Mind is a game about a girl possessed by an evil demon. It is my first game project in which Im using Ren'Py and Python. I am the sole programmer and one of the writers of the game. I'm doing this for a school project</p>
+  <a href="https://emeraldsworldgames.itch.io/natalie-vs-the-mind" class="button">play Natalie Vs. The Mind</a>
 </div>
 </body>
 </html>
