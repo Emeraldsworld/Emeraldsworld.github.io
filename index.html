@@ -2,6 +2,7 @@
 <html>
 <head>
 <style>
+
   img {
   width: 100%;
   height: auto;
@@ -14,7 +15,7 @@
     "footer footer";
   grid-template-columns: 1fr 3fr;
   gap: 5px;
-  background-color: #f099c4;
+  background-color: #833e60;
   padding: 5px;
 }
 .container > div {
@@ -27,15 +28,22 @@
 }
 .container > div.menu {
   grid-area: menu;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  
 }
 .container > div.content {
   grid-area: content;
+  width: 100%;
 }
-.container > div.footer {
-  grid-area: footer;
-}
+
 .button {
-  background-color: #e0a2f8;
+  background-color: #5d366d;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -44,18 +52,32 @@
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
-  cursor: pointer;}
+  cursor: pointer;
+  width: 50%
+  }
+  body {
+    margin: 0%;
+  }
 </style>
 </head>
 <body>
 
 <div class="container">
   <div class="header"><h2>Emerald Luxner</h2></div>
-  <div class="menu"><a href="programming.html" class="button">progamming</a><a href="graphicdesign.html" class="button">graphic design</a><a href="Resume.pdf" class="button">resume</a><a href="bread.jpg" class="button">bread</a><img src="emerald.png" alt="emerald"></div>
-  <div class="content"><h3>About Emerald</h3><p>Emerald is an inspiring game development student from upstate New York. They have always loved video games and always wanted to learn more about how they were made. In 5th grade, they learned about code.org and got obsessed with learning more about code. They are known for making games like ChatBot and Lovin Hell. They are also known for their social media accounts where they read on stream and make bookmarks.
-  </p></div>
-  <div class="footer"><h4>contact info</h4> <p>phone: 123-456-7890</p><p>email: emeraldsworld@emerald.com</p><p>address: 666 emerald st, emeraldsworld, ny, USA</p></div>
+  <div class="menu"><a href="programming.html" class="button">progamming</a>
+    <a href="graphicdesign.html" class="button">graphic design</a>
+    <a href="resume for portfolio.pdf" class="button">resume</a>
+    <a href="audio.html" class=button>audio</a>
+    <a href="https://forms.gle/AmrkXAsctyWZe1oS8" class="button">Contact Form</a>
+  </div>
+  <div class="content"><h3>About Emerald</h3><p><div class="content"><h3>Aspiring Game Programmer</h3><p> I am a senior in the Multimedia and Gaming program at Robert H. Gibson Technical School. I have great time management skills. I am also great with co-workers or classmates. I found my love for programming when I was in 5th grade during the computer science unit at my school. During the unit, we used a website called Code.org, a website that teaches kids how to code using blocks (a version of javascript). During that unit all I could talk about was programming but, I couldn’t code on my tablet at the time. So that Christmas, my dad bought me a cheap computer so I could practice. I have a semi-popular Tiktok account called Emeraldsworld where I talk about books based on TV and video games and about the life of a game development student. I joined the Multimedia and gaming program so I could learn more about coding and get experience. I am also going to Schenectady County Community College to get my associates degree in computer science.
+</p>
+<p>I have worked on multiple game projects during my time at Robert H Gibson Technical School. I have worked on many games. One of them was Bellaby’s Dungeon Escape. I worked on it from March-June 2025. We only had one month to make the game, which made it difficult for my team since we failed to communicate and had two artists with two different ideas of what to make. During that time, I was the only programmer and writer on the project so I had to do a lot of the programming by myself. I also made a game called Lovin’ Hell which was a project I did for a game jam. I was the programmer and had a lot of fun making the game even though it was a little difficult. The game was a dating sim where you can date the Grim Reaper. We used a game engine that wasn't known for those types of games so I pretty much had to figure it out myself. I'm currently working on a game called Natalie Vs The Mind (NvM), a game with a choice based system that chooses the ending depending on your choices. </p>
+<p>My goals for the future is to meet other game developers by going to local meetups and talking to people online. I have already achieved some of this goal by meeting other game development students at my college. Another goal of mine is to someday have my own game company that makes life sims. I plan to achieve this goal by making a couple life simulation games similar to the sims since there aren't many competitors.</p>
+<p>“Your focus determines your reality.”  - Qui-Gon Jinn, star wars</p>
+</p>
 </div>
+  
 
 </body>
 </html>
