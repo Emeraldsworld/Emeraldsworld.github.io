@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Programming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    img {
+      width: 50%;
+      height: auto;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 0.6fr 3fr;
+      gap: 2px;
+      background-color: #833e60;
+      padding: 2px;
+    }
+
+    .container>div {
+      background-color: rgba(247, 247, 247, 0.8);
+      padding: 10px;
+      margin: auto
+    }
+
+    .container>div.header {
+      grid-area: header;
+      text-align: center;
+      margin: auto;
+    }
+
+    .container>div.menu {
+      grid-area: menu;
+      height: 100%;
+      width: 150px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      overflow-x: hidden;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 7px;
+      background-color: #5d366d;
+    }
+
+    .container>div.content {
+      grid-area: content;
+      justify-content: left;
+      height: 100%;
+    }
+
+    .container>div.footer {
+      grid-area: footer;
+    }
+
+    .button {
+      background-color: #5d366d;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: auto;
+      cursor: pointer;
+      width: 100%
+    }
+
+    .button:hover {
+      background-color: #64a4f8;
+    }
+
+    /*added content*/
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Lucida Sans", sans-serif;
+      font-size: 17px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: purple;
+      text-align: center;
+      color: #000000;
+    }
+
+    .header>h1 {
+      font-size: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Emerald Luxner</h1>
+    </div>
+    <div class="menu">
+      <a href="index.html" class="button">about</a>
+      <a href="graphicdesign.html" class="button">graphic design</a>
+      <a href="MeganLuxner.pdf" class="button">resume</a>
+      <a href="audio.html" class=button>audio</a>
+      <a href="https://forms.gle/AmrkXAsctyWZe1oS8" class="button">Contact Form</a>
+    </div>
+    <div class="content">
+      <h2>About ChatBot</h2>
+      <img src="" alt="a photo of a character on a platform" height="50" width="50">
+      <a href="https://emeraldsworldgames.itch.io/chatbot-og-edition-by-emeraldsworld-reuploaded">ChatBot</a>
+      <p>ChatBot was my first video game I made by myself, I was inspired by artificial intelligence and the fears about
+        it. The player tries to escape the game with obstacles and dialog. I designed the art and programmed it myself
+        using construct 3. </p>
+      <h2>About Lovin Hell</h2>
+      <img src="lovinhell1.jpeg" alt="a black and white photo of a visual novel" height="100" width="100">
+      <img src="lovinhell2.jpeg" alt="a black and white character of a visual novel" height="100"
+        width="100">
+      <p>Lovin hell was my first group project that i made with my friend, V. The idea was to have a horror game that
+        turns into a dating sim. I worked on all the code while V worked on the art. I used construct 3 to make and
+        code the game </p>
+      <h2>about Bellaby's dungeon escape</h2>
+      <img src="bellaby1.jpeg" alt="a photo of a silly clown and a ball" height="100"
+        width="100">
+      <img src="bellaby2.jpeg" alt="a photo of a red screen and some text" height="100"
+        width="100">
+      <p> Bellaby's dungeon escape was my final group project for my first year of gaming and multimedia. I did all the
+        programming on construct 3 while 2 people did the art and someone did the writing. It was posted on itch.io on
+        6/10/2025 </p>
+      <a href="https://emeraldsworldgames.itch.io/bellabys-dungeon-escape">Bellaby's Dungeon Escape</a>
+      <h2>About Natalie Vs. The Mind </h2>
+      <img src="nvmscreenshot1.png"
+        alt="a screenshot from a visual novel called Natalie Vs the Mind where Natalie is talking to a demon in a mirror"
+        height="100" width="100">
+      <img src="nvmscreenshot2.png" alt="a visual novel of 2 girls arguing" height="100" width="100">
+      <img src="nvmscreenshot3.png" alt="Natalie Vs the mind's home menu" height="100" width="100">
+      <p>Natalie Vs. The Mind is a visual novel about a senior in high school who is possessed by a demon. The game was
+        made using the visual novel engine, Ren'py and the programming language, Python. I was the sole programmer and
+        team lead. I made it for a school project with my two classmates, V Gould -Artist- and Marcello Merced
+        <br>-audio composer and writer-</p>
+      <a href="https://emeraldsworldgames.itch.io/natalie-vs-the-mind">Natalie Vs. The Mind</a>
+    </div>
+    </div>
+</body>
+
+</html>
