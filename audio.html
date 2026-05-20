@@ -2,78 +2,116 @@
 <html lang="en">
 <head>
   <title>Audio</title>
-<style>
+  <style>
+    img {
+      width: 50%;
+      height: auto;
+    }
 
-  img {
-  width: 100%;
-  height: auto;
-}
-.container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "menu content"
-    "footer footer";
-  grid-template-columns: 1fr 3fr;
-  gap: 5px;
-  background-color: #833e60;
-  padding: 5px;
-}
-.container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-}
-.container > div.header {
-  grid-area: header;
-  text-align: center;
-}
-.container > div.menu {
-  grid-area: menu;
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  overflow-x: hidden;
-  
-}
-.container > div.content {
-  grid-area: content;
-  width: 100%;
-}
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 0.6fr 3fr;
+      gap: 2px;
+      background-color: #833e60;
+      padding: 2px;
+    }
 
-.button {
-  background-color: #5d366d;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 50%
-  }
-  body {
-    margin: 0%;
-  }
-</style>
+    .container>div {
+      background-color: rgba(247, 247, 247, 0.8);
+      padding: 10px;
+      margin: auto
+    }
+
+    .container>div.header {
+      grid-area: header;
+      text-align: center;
+      margin: auto;
+    }
+
+    .container>div.menu {
+      grid-area: menu;
+      height: 100%;
+      width: 150px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      overflow-x: hidden;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 7px;
+      background-color: #5d366d;
+    }
+
+    .container>div.content {
+      grid-area: content;
+      justify-content: left;
+      height: 100%;
+    }
+
+    .container>div.footer {
+      grid-area: footer;
+    }
+
+    .button {
+      background-color: #5d366d;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: auto;
+      cursor: pointer;
+      width: 100%
+    }
+
+    .button:hover {
+      background-color: #64a4f8;
+    }
+
+    /*added content*/
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Lucida Sans", sans-serif;
+      font-size: 17px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: purple;
+      text-align: center;
+      color: #000000;
+    }
+
+    .header>h1 {
+      font-size: 40px;
+    }
+  </style>
 </head>
 <body>
 
 <div class="container">
   <div class="header"><h1>Emerald Luxner</h1></div>
-  <div class="menu"><a href="programming.html" class="button">progamming</a>
-    <a href=index.html class="button">about</a>
-    <a href="graphicdesign.html" class="button">graphic design</a>
-    <a href="MeganLuxner.pdf" class="button">resume</a>
-  
+  <div class="menu">
+    <a href=index.html class="button">About</a>
+    <a href="programming.html" class="button">Programming</a>
+    <a href="graphicdesign.html" class="button">Graphic design</a>
+    <a href="MeganLuxner.pdf" class="button">Resume</a>
+    <A href="audio.html" class="button">Audio</A>
     <a href="https://forms.gle/AmrkXAsctyWZe1oS8" class="button">Contact Form</a>
   </div>
-  <div class="content"><h2>audio</h2>
-    <h3> class audios:</h3>
+  <div class="content"><h1>audio</h1>
+    <h3> Class audios:</h3>
  <audio controls>
   <source src="activity72.wav"> </audio>
   <p>This is an audio I made for school and was my first audio project. It is supposed to seem creepy. I made it using Reaper and freesounds.com</p>

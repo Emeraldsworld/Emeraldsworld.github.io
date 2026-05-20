@@ -1,89 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title>Graphic design</title>
-<style>
+  <title>Graphic design</title>
+  <style>
+    img {
+      width: 50%;
+      height: auto;
+    }
 
-  img {
-  width: 40%;
-  height: auto;
-}
-.container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "menu content"
-    "footer footer";
-  grid-template-columns: 1fr 3fr;
-  gap: 5px;
-  background-color: #833e60;
-  padding: 5px;
-}
-.container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
-}
-.container > div.header {
-  grid-area: header;
-  text-align: center;
-}
-.container > div.menu {
-  grid-area: menu;
-  height: 100%;
-  width: 150px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  overflow-x: hidden;
-  
-}
-.container > div.content {
-  grid-area: content;
-  width: 100%;
-}
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      grid-template-columns: 0.6fr 3fr;
+      gap: 2px;
+      background-color: #833e60;
+      padding: 2px;
+    }
 
-.button {
-  background-color: #5d366d;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  width: 50%
-  }
-  body {
-    margin: 0%;
-  }
-</style>
+    .container>div {
+      background-color: rgba(247, 247, 247, 0.8);
+      padding: 10px;
+      margin: auto
+    }
+
+    .container>div.header {
+      grid-area: header;
+      text-align: center;
+      margin: auto;
+    }
+
+    .container>div.menu {
+      grid-area: menu;
+      height: 100%;
+      width: 150px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      overflow-x: hidden;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 7px;
+      background-color: #5d366d;
+    }
+
+    .container>div.content {
+      grid-area: content;
+      justify-content: left;
+      height: 100%;
+    }
+
+    .container>div.footer {
+      grid-area: footer;
+    }
+
+    .button {
+      background-color: #5d366d;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: auto;
+      cursor: pointer;
+      width: 100%
+    }
+
+    .button:hover {
+      background-color: #64a4f8;
+    }
+
+    /*added content*/
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Lucida Sans", sans-serif;
+      font-size: 17px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: purple;
+      text-align: center;
+      color: #000000;
+    }
+
+    .header>h1 {
+      font-size: 40px;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="container">
-  <div class="header"><h1>Emerald Luxner</h1></div>
-  <div class="menu">
-    <a href="index.html" class="button">about</a><a href="programming.html" class="button">programming</a>
-    <a href="MeganLuxner.pdf" class="button">resume</a>
-    <a href="audio.html" class=button>audio</a>
-    <a href="https://forms.gle/AmrkXAsctyWZe1oS8" class="button">Contact Form</a></div>
-  <div class="content">
- <h2>gaming and multimedia class: year 1</h2>
- <p>I made this for a school event where we were donating gift baskets to veterans at a local nursing home. I made a simple flyer using canva so it could be easy to read and understand but also interesting to people who saw it.</p>
- <img src="veteransbaskets.png" alt="a poster about the event" width="300" height="1000">
- <p>I made this concept logo during the 2d art unit using Canva. I chose to make the logo use darker colors that matched my name, Emerald. I wanted the cards to be green and blue while the name would be bright enough to be seen. I wanted it to be simple with everything else.</p> <img src="logo.png" alt="a game company logo for emeraldsworld games" width="300" height="300">
- <p>I made these last year as concept art for a point and click horror game that I had come up with. I added fake blood under the bed and made the room look lively. The 1st one is the final design and the second one is the original concept art.</p> <img src="gamemockup.png" alt="a game mockup for life in the dark" width="500" height="150">
-   <img src="gamemockup2.png" alt="a ui mockup of life in the dark" width="500" height="150">
-  <h3>stuff for fun</h3>
-  <p>I made this during may for star wars day using Canva</p>
-  <img src="starwars1.png" alt="a star wars quote" width="300" height="300">
-  <p>I made this as a tribute to a minecraft youtuber -technoblade- using krita</p>
-  <img src="technobladeartwork.png" alt="a painting of sword, cape and swords surrounded by quotes" width="300" height="300">
-</div>
-</div>
+  <div class="container">
+    <div class="header">
+      <h1>Emerald Luxner</h1>
+    </div>
+    <div class="menu">
+      <a href="index.html" class="button">About</a>
+      <a href="programming.html" class="button">Programming</a>
+      <a href="graphicdesign.html" class="button">Graphic Design</a>
+      <a href="MeganLuxner.pdf" class="button">Resume</a>
+      <a href="audio.html" class=button>Audio</a>
+      <a href="https://forms.gle/AmrkXAsctyWZe1oS8" class="button">Contact Form</a>
+    </div>
+    <div class="content">
+      <h1>Graphic Design</h1>
+      <h2>Gaming and Multimedia Class: Year 1</h2>
+      <p>I made this for a school event where we were donating gift baskets to veterans at a local nursing home. I made
+        a simple flyer using Canva so it could be easy to read and understand but also interesting to people who saw it.
+      </p>
+      <img src="images/veteransbaskets.png" alt="a poster about the event" width="300" height="1000">
+      <p>I made this concept logo during the 2d art unit using Canva. I chose to make the logo use darker colors that
+        matched my name, Emerald. I wanted the cards to be green and blue while the name would be bright enough to be
+        seen. I wanted it to be simple with everything else.</p>
+      <img src="images/logo.png" alt="a game company logo for emeraldsworld games" width="300" height="300">
+      <p>I made these last year as concept art for a point and click horror game that I had come up with. I added fake
+        blood under the bed and made the room look lively. The 1st one is the final design and the second one is the
+        original concept art.</p>
+      <img src="images/gamemockup.png" alt="a game mockup for life in the dark" width="500" height="150">
+      <img src="images/gamemockup2.png" alt="a ui mockup of life in the dark" width="500" height="150">
+      <h3>Personal Projects</h3>
+      <p>I made this during May for star wars day using Canva</p>
+      <img src="images/starwars1.png" alt="a star wars quote" width="300" height="300">
+      <p>I made this as a tribute to a minecraft youtuber -Technoblade- using Krita</p>
+      <img src="images/technobladeartwork.png" alt="a painting of sword, cape and swords surrounded by quotes"
+        width="300" height="300">
+    </div>
+  </div>
 </body>
-</html>
 
+</html>

@@ -3,9 +3,9 @@
 
 <head>
   <title>Emerald's portfolio</title>
-  <style>
+    <style>
     img {
-      width: 100%;
+      width: 50%;
       height: auto;
     }
 
@@ -15,21 +15,23 @@
         "header header"
         "menu content"
         "footer footer";
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 0.6fr 3fr;
       gap: 5px;
       background-color: #833e60;
-      padding: 5px;
+      padding: 0%;
+      margin: auto;
     }
 
     .container>div {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 10px;
+      background-color: rgba(247, 247, 247, 0.8);
+      padding: 1%;
+      margin: auto
     }
 
     .container>div.header {
       grid-area: header;
-      width: 97%;
       text-align: center;
+      margin: auto;
     }
 
     .container>div.menu {
@@ -37,17 +39,23 @@
       height: 100%;
       width: 150px;
       position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1;
+      top: 0px;
+      left: 0px;
+      z-index: 1px;
       overflow-x: hidden;
-
+      list-style-type: none;
+      padding: 5px;
+      background-color: #5d366d;
     }
 
     .container>div.content {
       grid-area: content;
-      width: 97%;
-      text-align: center;
+      justify-content: left;
+      height: 100%;
+    }
+
+    .container>div.footer {
+      grid-area: footer;
     }
 
     .button {
@@ -59,13 +67,34 @@
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
-      margin: 4px 2px;
+      margin: auto;
       cursor: pointer;
-      width: 50%
+      width: 100%
+    }
+
+    .button:hover {
+      background-color: #64a4f8;
+    }
+
+    /*added content*/
+    * {
+      box-sizing: border-box;
     }
 
     body {
-      margin: 0%;
+      font-family: "Lucida Sans", sans-serif;
+      font-size: 17px;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: purple;
+      text-align: center;
+      color: #000000;
+    }
+
+    .header>h1 {
+      font-size: 40px;
     }
   </style>
 </head>
@@ -73,7 +102,9 @@
 <body>
 
   <div class="container">
-    <div class="menu"><a href="programming.html" class="button">progamming</a>
+    <div class="menu">
+      <a href="index.html" class="button">about</a>
+      <a href="programming.html" class="button">programming</a>
       <a href="graphicdesign.html" class="button">graphic design</a>
       <a href="MeganLuxner.pdf" class="button">resume</a>
       <a href="audio.html" class=button>audio</a>
