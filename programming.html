@@ -124,17 +124,22 @@
   height: 100%;
   overflow: auto;
 }
-
 li a {
   display: block;
   color: rgb(255, 255, 255);
   padding: 8px 16px;
   text-decoration: none;
+  border-bottom: 1px solid #ffffff;
 }
 
 li a.active {
   background-color: #4206ce;
   color: white;
+  border-bottom: 1px solid #ffffff;
+}
+
+li:last-child {
+  border-bottom: none;
 }
 
 li a:hover:not(.active) {

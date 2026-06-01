@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emerald's portfolio</title>
     <style>
     img {
@@ -100,13 +101,18 @@ li a {
   color: rgb(255, 255, 255);
   padding: 8px 16px;
   text-decoration: none;
+  border-bottom: 1px solid #ffffff;
 }
 
 li a.active {
   background-color: #4206ce;
   color: white;
+  border-bottom: 1px solid #ffffff;
 }
 
+li:last-child {
+  border-bottom: none;
+}
 li a:hover:not(.active) {
   background-color: #09729b;
   color: white;
@@ -120,8 +126,8 @@ li a:hover:not(.active) {
     <ul>
   <li><a class="active" href="index.html">Home</a></li>
   <li><a href="programming.html">Games</a></li>
-  <li><a href="graphicdesign.html">graphic design</a></li>
-  <li><a href="audio.html"><Audio></Audio></a></li>
+  <li><a href="graphicdesign.html">Graphic Design</a></li>
+  <li><a href="audio.html">Audio</a></li>
   <li><a href="MeganLuxner.pdf">Resume</a></li>
   <li><a href="https://forms.gle/AmrkXAsctyWZe1oS8">Contact</a></li>
 </ul>
