@@ -4,7 +4,17 @@
 <head>
   <title>Programming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Emerald's portfolio</title>
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Emerald's portfolio</title>
+    <style>
     img {
       width: 50%;
       height: auto;
@@ -35,19 +45,20 @@
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
       font-family:'Times New Roman', Times, serif;
       font-style: italic;
+      margin: 10px 50px 10px 200px;
     }
 
     .container>div.menu {
+      display:center;
       grid-area: menu;
-      height: 100%;
-      width: 150px;
-      position: fixed;
-      top: 0px;
+      height: 1100px;
+      width: 160px;
+      position: absolute;
       left: 0px;
-      overflow-x: hidden;
-      list-style-type: none;
-      padding: 5px;
+      padding: 6px;
       background-color: #001C4F;
+      text-align: center;
+      
     }
 
     .container>div.content {
@@ -57,6 +68,7 @@
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
       font-family:'Times New Roman', Times, serif;
       font-weight:bolder;
+      margin: auto;
     }
 
     .container>div.footer {
@@ -80,6 +92,7 @@
     .button:hover {
       background-color: #64a4f8;
     }
+  
     /*added content*/
     * {
       box-sizing: border-box;
@@ -100,23 +113,47 @@
     .header>h1 {
       font-size: 40px;
     }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  background-color: #1e037c;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4206ce;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #09729b;
+  color: white;
+}
   </style>
 </head>
 
 <body>
-
-  <div class="container">
-    <div class="header">
-      <h1>Emerald Luxner</h1>
-    </div>
-    <div class="menu">
-      <a href="index.html" class="button">About</a>
-      <a href="programming.html" class="button" style="background-color: #006eff;">Programming</a>
-      <a href="graphicdesign.html" class="button">Graphic design</a>
-      <a href="audio.html" class=button>Audio</a>
-      <a href="MeganLuxner.pdf" class="button">Resume</a>
-      <a href="https://forms.gle/AmrkXAsctyWZe1oS8" class="button">Contact Form</a>
-    </div>
+ <div class="container">
+    <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="programming.html">Games</a></li>
+  <li><a href="graphicdesign.html">Graphic Design</a></li>
+  <li><a href="audio.html">Audio</a></li>
+  <li><a href="MeganLuxner.pdf">Resume</a></li>
+  <li><a href="https://forms.gle/AmrkXAsctyWZe1oS8">Contact</a></li>
+</ul>
     <div class="content">
       <h1>Game Projects</h1>
       <h2>About ChatBot</h2>

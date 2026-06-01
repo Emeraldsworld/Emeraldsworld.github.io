@@ -34,19 +34,20 @@
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
       font-family:'Times New Roman', Times, serif;
       font-style: italic;
+      margin: 10px 50px 10px 200px;
     }
 
     .container>div.menu {
+      display:center;
       grid-area: menu;
-      height: 100%;
-      width: 150px;
-      position: fixed;
-      top: 0px;
+      height: 1100px;
+      width: 160px;
+      position: absolute;
       left: 0px;
-      overflow-x: hidden;
-      list-style-type: none;
-      padding: 5px;
+      padding: 6px;
       background-color: #001C4F;
+      text-align: center;
+      
     }
 
     .container>div.content {
@@ -56,30 +57,12 @@
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
       font-family:'Times New Roman', Times, serif;
       font-weight:bolder;
+      margin: auto;
     }
 
     .container>div.footer {
       grid-area: footer;
     }
-
-    .button {
-      background-color: #001C4F;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: auto;
-      cursor: pointer;
-      width: 100%
-    }
-
-    .button:hover {
-      background-color: #64a4f8;
-    }
-  
     /*added content*/
     * {
       box-sizing: border-box;
@@ -100,20 +83,49 @@
     .header>h1 {
       font-size: 40px;
     }
+
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  background-color: #1e037c;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4206ce;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #09729b;
+  color: white;
+}
   </style>
 </head>
 
 <body>
 
   <div class="container">
-    <div class="menu">
-      <a href="index.html" class="button" Style="background-color:#006eff">about</a>
-      <a href="programming.html" class="button">programming</a>
-      <a href="graphicdesign.html" class="button">graphic design</a>
-      <a href="audio.html" class=button>Audio</a>
-      <a href="MeganLuxner.pdf" class="button">resume</a>
-      <a href="https://forms.gle/AmrkXAsctyWZe1oS8" class="button">Contact Form</a>
-    </div>
+    <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="programming.html">Games</a></li>
+  <li><a href="graphicdesign.html">graphic design</a></li>
+  <li><a href="audio.html"><Audio></Audio></a></li>
+  <li><a href="MeganLuxner.pdf">Resume</a></li>
+  <li><a href="https://forms.gle/AmrkXAsctyWZe1oS8">Contact</a></li>
+</ul>
+    
     <div class="header">
       <h1>Emerald Luxner</h1>
     </div>
@@ -136,15 +148,13 @@
         During the unit, we used a website called Code.org, a website that teaches kids how to code using blocks (a version of javascript). 
         During that unit all I could talk about was programming but, I couldn’t code on my tablet at the time.
         So that Christmas, my dad bought me a cheap computer so I could practice. </p>
-      <p>I joined a 2 year Multimedia and gaming program so I could learn more about coding and get experience. I learned many game development skills like programming, audio development, art, and game design and writing.</p>
-      <p>I learned how to program using Construct 3 and Godot and make websites (like the one you are using) with CSS, HTML, and Java. 
+      <p>I joined a 2 year Multimedia and gaming program so I could learn more about coding and get experience. I learned many game development skills like programming, audio development, art, and game design and writing.
+      I learned how to program using Construct 3 and Godot and make websites (like the one you are using) with CSS, HTML, and Java. 
         I learned and applied fundamental concepts of 3D game programming like scene graphs, meshes, colliders, cameras, and lighting. 
-        I learned how to implement common 3D game features.</p>
-        <p>I learned audio production using ChipTone, Bosca Ceoil, REAPER, MuseScore, and Audacity. 
-          I created music, sound effects, and edited a voice actor’s voice.</p>
-      <p>I tried out 2d and 3d art (using Blender, Krita, and Piskel), I learned and applied fundamental skills of 3D digital art and animation including modeling, texturing, rigging, and sculpting. 
-        I created characters and environments for games.</p>
-      <p>I learned the MDA framework, design pillars, prototyping, and playtesting, as well as methods for communicating design ideas. 
+        I learned how to implement common 3D game features.
+        I learned audio production using ChipTone, Bosca Ceoil, REAPER, MuseScore, and Audacity. 
+          I created music, sound effects, and edited a voice actor’s voice. I tried out 2d and 3d art (using Blender, Krita, and Piskel), I learned and applied fundamental skills of 3D digital art and animation including modeling, texturing, rigging, and sculpting. 
+        I created characters and environments for games.I learned the MDA framework, design pillars, prototyping, and playtesting, as well as methods for communicating design ideas. 
         I learned about how to apply fundamental narrative concepts within the context of games and interactive fiction. 
         I practiced creating branching narratives and environmental storytelling using accessible authoring tools like Ren’Py and Bitsy. </p>
       <p>I have worked on a total of 5 game projects, Bellaby’s Dungeon Escape, Lovin’ Hell, ChatBot, Natalie Vs. The Mind, and a new unnamed game based on bees.
