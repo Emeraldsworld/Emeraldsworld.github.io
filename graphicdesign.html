@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-  <title>Graphic design</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerald's portfolio</title>
     <style>
     img {
       width: 50%;
@@ -33,21 +34,11 @@
       margin: auto;
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
       font-family:'Times New Roman', Times, serif;
-      font-style: italic;
       margin: 10px 50px 10px 200px;
-    }
-
-    .container>div.menu {
-      display:inline;
-      grid-area: menu;
-      height: 1100px;
-      width: 160px;
-      position: absolute;
-      left: 0px;
-      padding: 6px;
-      background-color: #001C4F;
-      text-align: center;
-      
+      border-style: solid;
+      border-width: 5px;
+      border-color:#09729b;
+      border-radius: 20%;
     }
 
     .container>div.content {
@@ -55,40 +46,22 @@
       justify-content: left;
       height: 100%;
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
-      font-family:'Times New Roman', Times, serif;
-      font-weight:bolder;
-      margin: auto;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      border-style: solid;
+      border-width: 5px;
+      border-color:#09729b;
+      border-radius: 3%;
     }
 
     .container>div.footer {
       grid-area: footer;
     }
-
-    .button {
-      background-color: #001C4F;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: auto;
-      cursor: pointer;
-      width: 100%
-    }
-
-    .button:hover {
-      background-color: #64a4f8;
-    }
-  
     /*added content*/
     * {
       box-sizing: border-box;
     }
 
     body {
-      font-family: "Lucida Sans", sans-serif;
       font-size: 17px;
     }
 
@@ -108,23 +81,36 @@
   margin: 0;
   padding: 0;
   width: 130px;
-  background-color: #1e037c;
+  background-color: #ffffff;
   position: fixed;
   height: 100%;
   overflow: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color:#09729b;
+  border-radius: 1%;
 }
+
 li a {
   display: block;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 8px 16px;
   text-decoration: none;
   border-bottom: 1px solid #ffffff;
+   border-style: solid;
+  border-width: 2px;
+  border-color:#09729b;
+  border-radius: 1%;
 }
 
 li a.active {
-  background-color: #4206ce;
+  background-color: #88a4a7;
   color: white;
   border-bottom: 1px solid #ffffff;
+   border-style: solid;
+  border-width: 1px;
+  border-color:#09729b;
+  border-radius: 1%;
 }
 
 li:last-child {
@@ -139,6 +125,9 @@ li a:hover:not(.active) {
 
 <body>
 <div class="container">
+   <div class="header">
+      <h1>Emerald Luxner</h1>
+    </div>
    <ul>
   <li><a class="active" href="index.html">Home</a></li>
   <li><a href="programming.html">Games</a></li>
