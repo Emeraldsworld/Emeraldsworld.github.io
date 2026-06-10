@@ -20,18 +20,20 @@
       background-color: #304D82;
       padding: 0%;
       margin: auto;
+      
+
     }
 
     .container>div {
       background-color: rgba(247, 247, 247, 0.8);
       padding: 1%;
       margin: auto
+
     }
 
     .container>div.header {
       grid-area: header;
       text-align: center;
-      margin: auto;
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
       font-family:'Times New Roman', Times, serif;
       margin: 10px 50px 10px 200px;
@@ -39,11 +41,14 @@
       border-width: 5px;
       border-color:#09729b;
       border-radius: 20%;
+      max-width: 1000px;
+      min-width: 300px;
+      overflow-x: auto;
     }
 
     .container>div.content {
       grid-area: content;
-      justify-content: left;
+      text-align:center;
       height: 100%;
       text-shadow: 2px 2px 5px rgb(255, 255, 255);
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -51,10 +56,20 @@
       border-width: 5px;
       border-color:#09729b;
       border-radius: 5%;
+    margin: 10px 200px 200px 150px;
+    padding-right: 10px;
+    max-width: 8000px;
+    min-width: 300px;
+    text-align: center;
+    text-indent: 10px;
+    overflow-x: auto;
+   overflow: visible;
+   float: right;
     }
 
     .container>div.footer {
       grid-area: footer;
+      overflow-x: auto;
     }
     /*added content*/
     * {
